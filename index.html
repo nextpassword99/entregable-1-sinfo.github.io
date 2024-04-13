@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es-pe">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Entregable 1</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Macondo&display=swap"
+      rel="stylesheet"
+    />
+
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar visible">
+        <span>
+          <h1>T</h1>
+        </span>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#resumen">Resumen Profesional</a></li>
+          <li><a href="#acerca">Acerca de Mi</a></li>
+          <li><a href="#portafolio">Portafolio</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="inicio">
+        <div class="container">
+          <form id="form">
+            <div class="header_form">
+              <h1 class="effect_writer">Formulario de registro</h1>
+              <p>Este es un formulario completo</p>
+            </div>
+            <div class="body_form">
+              <div class="flex-1">
+                <div class="flex column">
+                  <div class="container_input_text">
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      placeholder=""
+                      maxlength="50"
+                      required
+                    />
+                    <span></span>
+                    <label for="name">Nombres</label>
+                  </div>
+                  <div class="container_input_text">
+                    <input
+                      type="text"
+                      name="first-name"
+                      id="first-name"
+                      placeholder=""
+                      maxlength="50"
+                      required
+                    />
+                    <span></span>
+                    <label for="first-name">Apellidos</label>
+                  </div>
+                  <div class="container_input_text">
+                    <input
+                      type="email"
+                      name="correo"
+                      id="correo"
+                      placeholder=""
+                      required
+                    />
+                    <span style="width: 43px"></span>
+                    <label for="correo">Correo</label>
+                  </div>
+
+                  <label for="population">Población</label>
+                  <input type="text" id="population" name="population" hidden />
+                  <div class="option_select">
+                    <span class="selection unselectable">Seleccionar</span>
+                    <ul class="population__options hidden-element">
+                      <li class="form__value">Alicante</li>
+                      <li class="form__value">Madrid</li>
+                      <li class="form__value">Sevilla</li>
+                      <li class="form__value">Valencia</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex-1">
+                <div class="container_radio">
+                  sexo
+                  <label class="radio-label" for="hombre">
+                    <input
+                      type="radio"
+                      id="hombre"
+                      name="sexo"
+                      value="hombre"
+                    />
+                    <span class="radio-custom"></span>
+                    <span>Hombre</span>
+                  </label>
+
+                  <label class="radio-label" for="mujer">
+                    <input type="radio" id="mujer" name="sexo" value="mujer" />
+                    <span class="radio-custom"></span>
+                    <span>Mujer</span>
+                  </label>
+                </div>
+
+                <div class="container_textarea">
+                  <textarea
+                    name="description"
+                    cols="30"
+                    rows="10"
+                    placeholder="Escribe lo que quieras aquí"
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="container_checkbox">
+              <input
+                class="checkbox"
+                type="checkbox"
+                name="novedades"
+                id="novedades"
+                checked
+              />
+              <label for="novedades">
+                Deseo recibir más información sobre novedades y ofertas.
+              </label>
+            </div>
+
+            <div class="container_checkbox">
+              <input
+                class="checkbox"
+                type="checkbox"
+                name="termino"
+                id="termino"
+                required
+              />
+              <label for="termino">
+                Declaro haber leído y aceptar las condiciones generales del
+                programa y la normativa sobre protección de datos.
+              </label>
+            </div>
+            <button class="btn" onclick="getForm()">Enviar</button>
+            <div id="result"></div>
+          </form>
+        </div>
+      </section>
+
+      <!-- Parte 2 (Crear hoja de vida) -->
+      <section class="section2">
+        <div class="bg-img">
+          <img src="./assets/img/bg-lap.jpeg" alt="background image" />
+        </div>
+        <div class="hoja-vida">
+          <div class="content-vida">
+            <h1 class="move ani ani-l-r">El blog de Trodi</h1>
+            <span class="activity ani ani-b-t">Programador</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="resumen" class="section3">
+        <div class="container_3">
+          <div>
+            <h2 class="ani ani-b-t-s">Resumen profesional</h2>
+          </div>
+          <div>
+            <ul>
+              <li class="ani ani-b-t-s">
+                <img src="./assets/img/img_1.png" alt="#" />
+                <h3>Diseño web</h3>
+                <p>
+                  Creador de diseños web con software especializado, tal es como
+                  Figma, Adobe XD y WordPress
+                </p>
+              </li>
+              <li class="ani ani-b-t-s">
+                <img src="./assets/img/img_2.png" alt="#" />
+                <h3>Fotografía</h3>
+                <p>
+                  Fotógrafo de eventos especiales, además de dominio de
+                  programas de edición como Photoshop y Corel Draw.
+                </p>
+              </li>
+              <li class="ani ani-b-t-s">
+                <img src="./assets/img/img_3.png" alt="#" />
+                <h3>Edición de video</h3>
+                <p>
+                  Creador de contenido variado, especializado en el género
+                  cortometrajes. Con dominio en Davinci Resolve.
+                </p>
+              </li>
+              <li class="ani ani-b-t-s">
+                <img src="./assets/img/img_4.png" alt="#" />
+                <h3>Escritura</h3>
+                <p>
+                  Domino la redacción de elementos literarios, con mucha
+                  agilidad y dedicación por el uso correcto del idioma.
+                </p>
+              </li>
+              <li class="ani ani-b-t-s">
+                <img src="./assets/img/img_5.png" alt="#" />
+                <h3>Codificación</h3>
+                <p>
+                  Habilidades de programación en HTML, CSS, JavaScript, PHP,
+                  SQL, Java, Python y uso de frameworks como React JS y Django.
+                </p>
+              </li>
+              <li class="ani ani-b-t-s">
+                <img src="./assets/img/img_6.png" alt="#" />
+                <h3>Desarrollo de Aplicaciones</h3>
+                <p>
+                  Desarrollo de aplicaciones con tecnologías como Java, Kotlin,
+                  Flutter y Python
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="acerca" class="section4">
+        <div class="container_4">
+          <div>
+            <h2 class="ani ani-b-t-s">Acerca de Mi</h2>
+          </div>
+          <div class="content">
+            <div class="ani ani-l-r" >
+              <img src="./assets/img/bg-lap.jpeg" alt="image lap" />
+            </div>
+            <div class="ani ani-r-l">
+              <h3 class="effect_writer">Vamos aprendiendo...!</h3>
+              <p>
+                Soy un programador novato, que aprende a todo ritmo. Mi objetivo
+                es poder adquirir las habilidades necesarias para ejercer está
+                actividad. Tengo 18 años y vivo en Cusco.
+              </p>
+              <div class="datos_4">
+                <div>
+                  <h5>Nombre:</h5>
+                  <p>El blog de Trodi</p>
+                  <h5>Teléfono:</h5>
+                  <p>000 000 000</p>
+                </div>
+                <div>
+                  <h5>Correo electrónico:</h5>
+                  <p>trodi@gmail.com</p>
+                  <h5>Apodo</h5>
+                  <p>Trodi</p>
+                </div>
+              </div>
+              <button class="ani ani-b-t">Visitar</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="portafolio" class="section_portafolio">
+        <div class="container_5">
+          <div>
+            <h2 class="ani ani-b-t-s">Portafolio</h2>
+          </div>
+          <div class="container_images">
+            <ul>
+              <li><img src="./assets/img/abu-plaza.jpg" alt="" /></li>
+              <li><img src="./assets/img/ajedrez-img.jpg" alt="" /></li>
+              <li><img src="./assets/img/paloma-volar.jpg" alt="" /></li>
+            </ul>
+            <ul>
+              <li><img src="./assets/img/peru-hinchas.jpg" alt="" /></li>
+              <li><img src="./assets/img/coar-img.jpg" alt="" /></li>
+              <li><img src="./assets/img/fotografo.jpg" alt="" /></li>
+            </ul>
+            <ul>
+              <li><img src="./assets/img/calca-cuscp.jpg" alt="" /></li>
+              <li><img src="./assets/img/plaza-cusco.jpg" alt="" /></li>
+              <li><img src="./assets/img/fuente-img.jpg" alt="" /></li>
+            </ul>
+            <ul>
+              <li><img src="./assets/img/carretera-cusco.jpg" alt="" /></li>
+              <li><img src="./assets/img/lluvia-cusco.jpg" alt="" /></li>
+              <li><img src="./assets/img/bosque-parque.jpg" alt="" /></li>
+            </ul>
+          </div>
+          <div class="container_video ani ani-b-t-s">
+            <iframe
+              src="https://www.youtube.com/embed/cUcXxx505uw?si=rAFBVKwhr6VXfUnA&amp;controls=0"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="container_pdf ani ani-b-t-s">
+            <iframe
+              src="./assets/pdf/certificado-java.pdf#toolbar=0"
+              frameborder="0"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
